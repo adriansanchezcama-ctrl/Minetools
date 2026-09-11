@@ -1,28 +1,43 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Minecraft - MineTools</title>
+    <title>MineTools</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
 
-    <h1>⛏️ MineTools</h1>
-    <h2>Calculadora de bloques de Minecraft</h2>
+    <header>
+        <h1>⛏️ MineTools</h1>
+        <p>Herramientas sencillas para Minecraft</p>
+    </header>
 
-    <input type="number" id="bloques" placeholder="Número de bloques">
+    <main>
+        <section class="card">
+            <h2>📦 Conversor de bloques a stacks</h2>
 
-    <button onclick="convertir()">Calcular</button>
+            <input
+                type="number"
+                id="bloques"
+                placeholder="Número de bloques"
+                min="0"
+            >
 
-    <p id="resultado"></p>
+            <button onclick="convertir()">Calcular</button>
+
+            <p id="resultado"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>MineTools • Herramientas para Minecraft</p>
+    </footer>
 
     <script src="script.js"></script>
-
 </body>
-</html>
-<section class="card">
+</html><section class="card">
     <h2>🌎 Conversor Nether ↔ Overworld</h2>
 
     <input type="number" id="x" placeholder="Coordenada X">
