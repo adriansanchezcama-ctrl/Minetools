@@ -13,9 +13,7 @@ function convertir() {
 
     document.getElementById("resultado").textContent =
         `${bloques} bloques = ${stacks} stacks + ${sobrantes} bloques`;
-}
-<se
-function netherAOverworld() {
+}function netherAOverworld() {
     const x = Number(document.getElementById("x").value);
     const z = Number(document.getElementById("z").value);
 
