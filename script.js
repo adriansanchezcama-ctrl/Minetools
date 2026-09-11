@@ -14,14 +14,25 @@ function convertir() {
     document.getElementById("resultado").textContent =
         `${bloques} bloques = ${stacks} stacks + ${sobrantes} bloques`;
 }
-<section class="card">
-    <h2>🌎 Conversor Nether ↔ Overworld</h2>
+<se
+function netherAOverworld() {
+    const x = Number(document.getElementById("x").value);
+    const z = Number(document.getElementById("z").value);
 
-    <input type="number" id="x" placeholder="Coordenada X">
-    <input type="number" id="z" placeholder="Coordenada Z">
+    const resultadoX = x * 8;
+    const resultadoZ = z * 8;
 
-    <button onclick="netherAOverworld()">Nether → Overworld</button>
-    <button onclick="overworldANether()">Overworld → Nether</button>
+    document.getElementById("coordenadas").textContent =
+        `Overworld: X ${resultadoX}, Z ${resultadoZ}`;
+}
 
-    <p id="coordenadas"></p>
-</section>
+function overworldANether() {
+    const x = Number(document.getElementById("x").value);
+    const z = Number(document.getElementById("z").value);
+
+    const resultadoX = Math.round(x / 8);
+    const resultadoZ = Math.round(z / 8);
+
+    document.getElementById("coordenadas").textContent =
+        `Nether: X ${resultadoX}, Z ${resultadoZ}`;
+}
